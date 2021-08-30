@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984723872606526604}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3.9, z: 0}
-  m_LocalScale: {x: 0.09553532, y: 1.480595, z: 0}
+  m_LocalScale: {x: 0.095535316, y: 1.4805945, z: 0}
   m_Children:
   - {fileID: 984723873501087039}
   m_Father: {fileID: 0}
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCanMove: 0
   forceY: 25
+  col2D: {fileID: 5690985525106462227}
 --- !u!1 &984723873501087032
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,9 +159,11 @@ GameObject:
   m_Component:
   - component: {fileID: 984723873501087039}
   - component: {fileID: 984723873501087038}
+  - component: {fileID: 5690985525106462227}
+  - component: {fileID: 7929197942416238586}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,3 +234,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &5690985525106462227
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984723873501087032}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45281443
+--- !u!114 &7929197942416238586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984723873501087032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0de7645cd04a54194df38818f82fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
